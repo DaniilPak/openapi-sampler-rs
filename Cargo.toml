@@ -1,0 +1,21 @@
+[package]
+name = "openapi-sampler"
+version = "0.1.0"
+edition = "2021"
+authors = ["DaniilPak"]
+description = "Generate deterministic example values from OpenAPI 3.x / Swagger 2.0 / JSON Schema schemas. An independent Rust port of Redocly's openapi-sampler."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/DaniilPak/openapi-sampler-rs"
+documentation = "https://docs.rs/openapi-sampler"
+readme = "README.md"
+keywords = ["openapi", "swagger", "json-schema", "sample", "example"]
+categories = ["development-tools", "web-programming", "encoding"]
+exclude = [".github/"]
+
+[dependencies]
+indexmap = "2"
+log = "0.4"
+serde_json = { version = "1", features = ["preserve_order"] }
+
+[dev-dependencies]
+regex = "1"
